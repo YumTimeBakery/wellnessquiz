@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="survey.css" />
+
+		<script type="text/javascript" src="survey.js"></script>
+		
+		<title>Wellness Quiz</title>
+	</head>
+
+	<body>
+		<img src="img/logo.png"></img>
+		<br><br>
+		<canvas id="wellness_wheel"></canvas>
+
+		<hr>
+
+
+		<div  id="survey">
+  			<form id="quiz"></form>
+  			<button type="submit" id="yesb" onclick="build_wheel(1)">Yes</button>
+  			<button type="submit" id="nob" onclick="build_wheel(0)">No</button>
+  		</div>
+
+  		<script>get_questions();</script>
+  		<script>build_minimalist_wheel();</script>
+
+  	</body>
+
+</html>

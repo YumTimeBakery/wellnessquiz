@@ -1,0 +1,80 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  src:url("file://fonts/OpenSans-Regular.ttf");
+  src:url("file://fonts/OpenSans-Bold.ttf");
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 200%;
+}
+
+img {
+  width: 25%;
+}
+
+label {
+  font-size: 130%;
+}
+
+#radioButton {
+  font-size: 18px;
+}
+
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+input {
+  margin: 5px 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  border-bottom: 3px solid #333;
+}
+
+#yesb {
+  font-size: 200%;
+  background: #1da500;
+  font-weight: bold;
+  position:absolute;
+  bottom: 6%;
+  left: 35%;
+  width: 10%;
+  height: 10%;
+}
+
+#nob {
+  font-size: 200%;
+  background: #ff1616;
+  font-weight: bold;
+  position:absolute;
+  bottom: 6%;
+  right: 35%;
+  width: 10%;
+  height: 10%;
+}
+
+#reset {
+  background: red;
+}
+
+#answer {
+  border: 1px dashed #ccc;
+  background: #eee;
+  padding: 10px;
+}
