@@ -57,6 +57,8 @@ switchtest = 0
 function get_questions() {
   if (qid > 35) {
     question_html = "<h1>Thank you for taking the time to answer!<br>The quiz is now over.</h1>"
+    document.getElementById("yesb").style.display="none";
+    document.getElementById("nob").style.display="none";
   } else {
     question_html = '<h1>' + questions[qid][1] + '</h1>';
   }
@@ -83,13 +85,13 @@ function addLabel(ctx, currLoc) {
         ctx.fillText(categories[qid / 6], canvas_dim * 1.15, canvas_dim * 0.125);
         break;
       case 1:
-        ctx.fillText(categories[qid / 6], canvas_dim * 1.3, canvas_dim * 0.5);
+        ctx.fillText(categories[qid / 6], canvas_dim * 1.27, canvas_dim * 0.5);
         break;
       case 2:
         ctx.fillText(categories[qid / 6], canvas_dim * 1.15, canvas_dim * 0.9);
         break;
       case 3:
-        ctx.fillText(categories[qid / 6], canvas_dim - (canvas_dim * 0.85), canvas_dim * 0.9);
+        ctx.fillText(categories[qid / 6], canvas_dim - (canvas_dim * 0.89), canvas_dim * 0.9);
         break;
       case 4:
         ctx.fillText(categories[qid / 6], canvas_dim - (canvas_dim * 0.93), canvas_dim * 0.5);
@@ -126,6 +128,9 @@ function build_wheel(answer) {
     if (choices[i] === "y"){
       drawPieSlice(ctx, myCanvas.width / 2, canvas_dim / 2, canvas_dim / 2 - border_offset,  ( i * Math.PI / (questions.length / 2) ) - Math.PI / 2 - c, ( ( i + 1 ) * Math.PI / (questions.length / 2 ) ) - Math.PI / 2 + c, colors[ Math.floor( i / (questions.length / 6 ) ) ]);
       drawPieSlice(ctx, myCanvas.width / 2, canvas_dim / 2, canvas_dim / 4,  ( i * Math.PI / (questions.length / 2) ) - Math.PI / 2 - c2, ( ( i + 1 ) * Math.PI / (questions.length / 2 ) ) - Math.PI / 2 + c2, "#ffffff");
+    } else if (choices[i] === "n") {
+      drawPieSlice(ctx, myCanvas.width / 2, canvas_dim / 2, canvas_dim / 2 - border_offset,  ( i * Math.PI / (questions.length / 2) ) - Math.PI / 2 - c, ( ( i + 1 ) * Math.PI / (questions.length / 2 ) ) - Math.PI / 2 + c, "#D3D3D3");
+      drawPieSlice(ctx, myCanvas.width / 2, canvas_dim / 2, canvas_dim / 4,  ( i * Math.PI / (questions.length / 2) ) - Math.PI / 2 - c2, ( ( i + 1 ) * Math.PI / (questions.length / 2 ) ) - Math.PI / 2 + c2, "#ffffff");      
     }
   }
 }
