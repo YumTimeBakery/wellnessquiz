@@ -52,10 +52,10 @@ button {
   background: #1da500;
   font-weight: bold;
   position:absolute;
-  bottom: 6%;
+  bottom: 4%;
   left: 35%;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
 }
 
 #nob {
@@ -63,10 +63,10 @@ button {
   background: #ff1616;
   font-weight: bold;
   position:absolute;
-  bottom: 6%;
+  bottom: 4%;
   right: 35%;
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
 }
 
 #reset {
