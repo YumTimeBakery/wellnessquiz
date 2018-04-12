@@ -59,6 +59,7 @@ function get_questions() {
     question_html = "<h1>Thank you for taking the time to answer!<br>The quiz is now over.</h1>"
     document.getElementById("yesb").style.display="none";
     document.getElementById("nob").style.display="none";
+    document.getElementById("printb").style.display="flex";
   } else {
     question_html = '<h1>' + questions[qid][1] + '</h1>';
   }

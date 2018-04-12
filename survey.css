@@ -69,6 +69,17 @@ button {
   height: 8%;
 }
 
+#printb {
+  font-size: 200%;
+  background: #00F;
+  font-weight: bold;
+  position:absolute;
+  bottom: 4%;
+  left: 45%;
+  width: 8%;
+  height: 8%;
+}
+
 #reset {
   background: red;
 }
