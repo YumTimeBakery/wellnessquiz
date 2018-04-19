@@ -56,7 +56,7 @@ switchtest = 0
 
 function get_questions() {
   if (qid > 35) {
-    question_html = "<h1>Thank you for taking the time to answer!<br>The quiz is now over.</h1>"
+    question_html = "<h1>Thank you!<br>This is your Wellness Wheel</h1>"
     document.getElementById("yesb").style.display="none";
     document.getElementById("nob").style.display="none";
     document.getElementById("printb").style.display="flex";
